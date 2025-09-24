@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tasks',
@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './tasks.component.css'
 })
 export class TasksComponent {
+  @Input({required: true}) name!: string;
 
+  cu() {
+    console.log(this.name)
+  }
+
+  pau(id: string) {
+    console.log(id);
+  }
 }
