@@ -1,12 +1,8 @@
 import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { NewTask } from './creation.model';
 import { TasksService } from '../../tasks.service';
 
 @Component({
   selector: 'app-creation',
-  standalone: true,
-  imports: [FormsModule],
   templateUrl: './creation.component.html',
   styleUrl: './creation.component.css',
 })
